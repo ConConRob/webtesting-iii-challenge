@@ -9,6 +9,7 @@ describe("Display", () => {
   it("Closed if closed prop is true", () => {
     const wrap = rt.render(<Display closed={true} />);
     expect(wrap.getByText(/closed/i));
+    expect(wrap.asFragment()).toMatchSnapshot();
   });
   it("Closed with red-led if closed prop is true", () => {
     const wrap = rt.render(<Display closed={true} />);
@@ -19,6 +20,7 @@ describe("Display", () => {
   it("Open if closed prop is false", () => {
     const wrap = rt.render(<Display closed={false} />);
     expect(wrap.getByText(/open/i));
+    expect(wrap.asFragment()).toMatchSnapshot();
   });
   it("Open with red-led if closed prop is false", () => {
     const wrap = rt.render(<Display closed={false} />);
@@ -29,6 +31,7 @@ describe("Display", () => {
   it("locked if locked prop is true", () => {
     const wrap = rt.render(<Display locked={true} />);
     expect(wrap.getByText(/locked/i));
+    expect(wrap.asFragment()).toMatchSnapshot();
   });
   it("locked with red-led if locked prop is true", () => {
     const wrap = rt.render(<Display locked={true} />);
@@ -39,6 +42,7 @@ describe("Display", () => {
   it("unlocked if locked prop is false", () => {
     const wrap = rt.render(<Display locked={false} />);
     expect(wrap.getByText(/unlocked/i));
+    expect(wrap.asFragment()).toMatchSnapshot();
   });
   it("unlocked with green-led if locked prop is false", () => {
     const wrap = rt.render(<Display locked={false} />);
