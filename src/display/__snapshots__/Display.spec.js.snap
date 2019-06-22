@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display Closed if closed prop is true 1`] = `
+<DocumentFragment>
+  <div
+    class="display panel"
+  >
+    <div
+      class="led green-led"
+    >
+      Unlocked
+    </div>
+    <div
+      class="led red-led"
+    >
+      Closed
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Display Open if closed prop is false 1`] = `
+<DocumentFragment>
+  <div
+    class="display panel"
+  >
+    <div
+      class="led green-led"
+    >
+      Unlocked
+    </div>
+    <div
+      class="led green-led"
+    >
+      Open
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Display locked if locked prop is true 1`] = `
+<DocumentFragment>
+  <div
+    class="display panel"
+  >
+    <div
+      class="led red-led"
+    >
+      Locked
+    </div>
+    <div
+      class="led green-led"
+    >
+      Open
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Display unlocked if locked prop is false 1`] = `
+<DocumentFragment>
+  <div
+    class="display panel"
+  >
+    <div
+      class="led green-led"
+    >
+      Unlocked
+    </div>
+    <div
+      class="led green-led"
+    >
+      Open
+    </div>
+  </div>
+</DocumentFragment>
+`;
